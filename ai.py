@@ -359,7 +359,7 @@ class VoiceAssistantGUI:
             self.engine.say("I'm fine, Thank you")
 
         elif "who made you" in query or "who created you" in query:
-            self.engine.say("i have been created by miss Haarun and Team")
+            self.engine.say("i have been created by mister Haarun and Team")
 
         elif "who are you" in query:
             self.engine.say("I am your virtual assistant created by Haarun and team")
@@ -383,6 +383,11 @@ class VoiceAssistantGUI:
             print("Opening Google...")
             self.engine.say("Opening Google")
             webbrowser.open("https://www.google.com")
+
+        elif "say my name"  in query:
+            print("Your name is Haarun...")
+            self.engine.say("Your name is Haarun...")
+            
 
         elif "open youtube" in query or "open YouTube" in query:
             print("Opening YouTube...")
