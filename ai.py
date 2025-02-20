@@ -1,18 +1,19 @@
-import tkinter as tk
+import tkinter as tk #gui
 from tkinter import ttk  # Import the ttk module for themed widgets
-import pyttsx3
-import speech_recognition as sr
-import pymysql
-from datetime import datetime
-import psutil
-import webbrowser
-import pyautogui
-import wikipedia
-from PIL import Image, ImageTk
-import threading
-import sys
-import time
-import requests
+import pyttsx3 #text to speech
+import speech_recognition as sr #speech to text
+import pymysql #database
+from datetime import datetime #date and time
+import psutil #battery
+import webbrowser #web browser
+import pyautogui #automation for keypress etc
+import pyautogui #automation for keypress etc
+import wikipedia #wikipedia
+from PIL import Image, ImageTk #image processing
+import threading #multithreading
+import sys #system functions
+import time #time functions
+import requests #internet requests
 
 
 class StdoutRedirector:
@@ -138,8 +139,6 @@ class VoiceAssistantGUI:
         window.geometry(f"{width}x{height}+{x_coordinate}+{y_coordinate}")
 
     
-        
-
     def start_voice_assistant_thread(self):
         voice_thread = threading.Thread(target=self.voice_assistant)
         voice_thread.daemon = True
@@ -180,13 +179,6 @@ class VoiceAssistantGUI:
         self.response_text.pack()
         sys.stdout = StdoutRedirector(self.response_text)
         self.start_voice_assistant_thread()
-
-
-
-       
-
-
-
 
 
     def login_page(self):
